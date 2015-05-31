@@ -1,3 +1,201 @@
 body {
-  background-color: #eee;
+    background-color: #eee;
+    margin: 0;
+    background-image: url(images/tumblr_ndyve8fmFa1tubinno1_r1_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.filter {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .3;
+}
+.logo {
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    top: 150px;
+    transform: translate(-50%, -50%);
+}
+
+/* NAVIGATION BAR */
+
+.navigationBar ul {
+    position: fixed;
+    list-style: none;
+    display: inline-block;
+    z-index: 15;
+    text-transform: uppercase;
+}
+.navigationBar ul li {
+    position: relative;
+    display: inline-block;
+}
+.navigationBar ul a {
+    color: #eee;
+    text-decoration: none;
+    margin: 15px;
+    font-family: 'Lato';
+    font-size: 20px;
+    text-align: center;
+}
+#listRight {
+    top: 132px;
+    position: fixed;
+    float: right;
+    right: 40%;
+    transform: translate(50%, -50%);
+}
+#listLeft {
+    top: 132px;
+    position: fixed;
+    float: left;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+.navigationBar .list li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    background-color: #eee;
+    transition: .17s;
+    width: 0%;
+}
+.navigationBar .list li:hover:after {
+    width: 100%;
+}
+.navigationBar .list li:active:after {
+    width: 100%;
+}
+
+/* END OF NAVIGATION BAR */
+
+
+/* LOGO TEXT */ 
+
+.logotext1 a{
+    text-decoration: none;
+    position: fixed;
+    font-family: 'Lato';
+    left: 50%;
+    top: 130px;
+    z-index: 15;
+    font-size: 32px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    
+}
+.logotext2 a{
+    text-decoration: none;
+    position: fixed;
+    font-family: 'Lato';
+    left: 50%;
+    color: #000;
+    top: 170px;
+    z-index: 15;
+    font-size: 30px;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    
+}
+.lilBar {
+    position: fixed;
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+    left: 50%;
+    top: 151px;
+    z-index: 15;
+    transform: translate(-50%, -50%);
+}
+
+/* END OF LOGO TEXT */
+
+
+/* LOGOS */
+
+.facebook a {
+    background-image: url(images/fb.png);
+    background-size: contain;
+    position: absolute;
+    z-index: 30;
+    top: 915px;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.facebook a:hover {
+    background-image: url(images/fbBlue.png);
+}
+
+.twitter a {
+    background-image: url(images/twtr.png);
+    background-size: contain;
+    position: absolute;
+    z-index: 30;
+    top: 915px;
+    left: 47%;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.twitter a:hover {
+    background-image: url(images/TwitterBlue.png);
+}
+
+.linkedin a {
+    background-image: url(images/linkedin.png);
+    background-size: contain;
+    position: absolute;
+    z-index: 30;
+    top: 915px;
+    left: 53%;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.linkedin a:hover {
+    background-image: url(images/LinkBlue.png);
+}
+
+
+/* ------------------ BLOG PART ------------------ */
+
+
+.blogBox {
+    position: absolute;
+    width: 1024px;
+    height: 600px;
+    background-color: #eee;
+    left: 50%;
+    top: 600px;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    font-family: 'Lato';
+
+}
+.blogBox h2 {
+    margin: 0px;
+    padding: 5px 0px 0px 10px;
+    color: #333;
+    
+}
+.blogBox p {
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+    font-size: 18px;
+    color: #333;
 }
